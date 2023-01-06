@@ -1,0 +1,18 @@
+# Messages Requests
+
+# Get - Get All Messages
+http://localhost:3000
+GET /messages
+
+# Post -  Create a new Message 
+http://localhost:3000
+
+POST /messages
+
+{
+  "content": "message"
+}
+
+# Get - Get Message by Id
+http://localhost:3000
+GET /messages/1
