@@ -6,7 +6,6 @@ export class MessageRepository {
 
     async findOne(id: number) {
         const contents = await readFile("messages.json", "utf-8");
-        //const messages = JSON.parse(contents).find((m: any) => m.id === id);
         const messages = JSON.parse(contents);
         return messages[id];
     }
